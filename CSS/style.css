@@ -91,6 +91,9 @@
     --text-color: #f0f4f5;
     --background-color: #65a3f8;
     --accent-color: #d49466;
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --clear-color: #00ff0000;
 }
 
 * {
@@ -113,13 +116,15 @@ a{
     justify-content: space-between;
     align-items: center;
     background: var(--background-color);
-    padding: 0.8rem 1.2rem;
+    padding: 0.8rem 2rem;
+
     /*transform: scale(1.2);*/
     transition: height 1s ease-in-out;
 }
 
 .navbar_logo{
     color: var(--text-color);
+    padding-left: 14rem;
 }
 
 .navbar_menu{
@@ -135,17 +140,17 @@ a{
 
 .navbar_menu li:hover{
     background-color: #f0f4f5;
-    border-color: #000000;
+    border-color: var(--black-color);
     border-style: solid;
     border-bottom-width: thick;
     border-right-width: thick;
     /*border-bottom-width: thick;*/
-    border-radius: 0.4rem;
+    border-radius: 10rem;
 }
 
 .navbar_menu li:hover a{
     /*li hover 시에 a태그의 텍스트 컬러 변경하는 방법*/
-    color: #000000;
+    color: var(--black-color);
 }
 
 
@@ -161,6 +166,7 @@ a{
     list-style: none;
     display: flex;
     color: var(--text-color);
+
 }
 
 .navbar_social_icons li{
