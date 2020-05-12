@@ -1,0 +1,213 @@
+/*
+.container{
+    background: bisque;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    !*기본값은 row*!
+    flex-wrap: wrap;
+    !*기본값은 nowrap*!
+    !*wrap 한줄에 꽉차게 되면 다음 열로 넘어감*!
+    !*wrap-reverse 한줄에 꽉차게 되어 다음열로 넘어갈때 거꾸로 넘어감*!
+
+
+    !*flex-flow: column nowrap;*!
+    !*flex-direction과 flex-wrap 두가지를 합한것*!
+
+    !*justify-content: flex-end;*!
+
+    !*!!!중심축에서 아이템들을 배치한다.*!
+    !*flex direction과 다르게 아이템열은 그대로 유지하며 아이템만 밑에서
+    시작하게된다.*!
+    !*아이템들을 어떻게 배치할것인지 결정해준다.*!
+
+
+
+    !*justify-content: space-around;*!
+    !*좌우측 끝쪽의 여백은 1칸씩 들어가고 아이템 사이의 공간은 2칸씩 공간이 생기게된다.*!
+
+
+
+
+    !*justify-content: space-between;*!
+    !*좌우측은 벽에 붙여주고 아이템 사이간격만 여백*!
+
+
+
+    !*justify-content: space-evenly;*!
+    !*좌,우,아이템 사이 모두 똑같은 여백으로*!
+
+
+    align-items: center;
+    !*수직 중심축에서 어떻게 할것인지*!
+    !*baseline 각각의 아이템들이 padding으로 인해 텍스트 위치가 다르다면
+    baseline을통해 아이템들의 크기는 다르지만 텍스트위치는 조정할수있다.*!
+
+
+    !*align-content: ;*!
+    !*아직 최신브라우저외에서는 적용안되는 부분도 많음*!
+
+
+
+}
+
+.item{
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+.item1{
+    background: #fd0005;
+    padding-top: 20px;
+
+    flex-grow: 1;
+    !*아이템의 가로 크기를 전체 컨테이너에 꽉차게 할수있도록*!
+    flex-shrink: 1;
+    !*컨테이너가 점점 작아졌을때 어떻게 행동하느냐*!
+
+    align-self: center;
+    !*아이템 별로 정렬 아이템 하나만*!
+
+}
+.item2{
+    background: #fda100;
+    flex-grow: 2;
+    flex-shrink: 2;
+    flex-basis: 50%;
+    !*기본값은 auto*!
+    !*%로 적용한다.*!
+    !*아이템들이 공간을차지할때 세부적으로 명시할수있는 방법*!
+
+}
+
+!*css 공부적용하기*!
+*/
+
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap&subset=korean');
+
+:root{
+    --text-color: #f0f4f5;
+    --background-color: #263343;
+    --accent-color: #d49466;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Do Hyeon', sans-serif;
+    /*font-size: 40px;*/
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--background-color);
+    padding: 0.8rem 1.2rem;
+    /*transform: scale(1.2);*/
+    transition: height 1s ease-in-out;
+}
+
+.navbar_logo{
+    color: var(--text-color);
+}
+
+.navbar_menu{
+    display: flex;
+    align-items: flex-start;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar_menu li{
+    padding: 0.8rem 1.2rem;
+}
+
+.navbar_menu li:hover{
+    background-color: var(--accent-color);
+    border-radius: 0.4rem;
+}
+
+
+.navbar_social_icons{
+    list-style: none;
+    display: flex;
+    color: var(--text-color);
+}
+
+.navbar_social_icons li{
+    padding: 0.8rem 1.2rem;
+}
+
+.navbar_toggle_btn {
+    display: none;
+    position: absolute;
+    right: 3.6rem;
+    /*font-size: 24px;*/
+    color: var(--text-color);
+    transition: transform 300ms ease-in-out;
+
+}
+
+
+
+
+/*768px 이하에서 css 처리*/
+@media screen and (max-width: 768px){
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        /*padding: 0.8rem 2.4rem;*/
+
+    }
+
+    .navbar_menu{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transition: 10s;
+
+
+    }
+
+    .navbar_menu li{
+        width: 80%;
+        /*margin: 1rem;*/
+        text-align: center;
+    }
+
+    .navbar_social_icons{
+        display: none;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+
+    .navbar_toggle_btn{
+        display: block;
+    }
+    .navbar_menu.active{
+        display: flex;
+        transform: inherit;
+
+
+    }
+    .navbar_social_icons.active{
+        display: flex;
+
+    }
+
+}
+
