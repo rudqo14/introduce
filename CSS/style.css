@@ -92,7 +92,7 @@
     --background-color: #65a3f8;
     --accent-color: #d49466;
     --black-color: #000000;
-    --white-color: #ffffff;
+    --white-color: #2f2929;
     --clear-color: #00ff0000;
 }
 
@@ -115,16 +115,21 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--background-color);
+    background: rgba(56, 64, 60, 0.9);
+    /*opacity: 0.9;*/
     padding: 0.8rem 2rem;
-
+    position: fixed;
+    height: 5rem;
+    top: 0;
+    left: 0;
+    right: 0;
     /*transform: scale(1.2);*/
     transition: height 1s ease-in-out;
 }
 
 .navbar_logo{
     color: var(--text-color);
-    padding-left: 14rem;
+    padding-left: 8rem;
 }
 
 .navbar_menu{
@@ -139,13 +144,15 @@ a{
 }
 
 .navbar_menu li:hover{
+    background-position: center;
     background-color: #f0f4f5;
     border-color: var(--black-color);
     border-style: solid;
-    border-bottom-width: thick;
-    border-right-width: thick;
+    border-bottom-width: 0.2rem;
+    border-right-width: 0.2rem;
     /*border-bottom-width: thick;*/
     border-radius: 10rem;
+    /*opacity: 1;*/
 }
 
 .navbar_menu li:hover a{
@@ -183,12 +190,23 @@ a{
 
 }
 
+main .site_title{
+    background: url("../images/backgroung_cutting.PNG");
+    background-size: cover;
+    height: 60vh;/*vh 뷰포트 height의 약자로 화면 크기를 기준으로 한 높이(1vh는 10px)*/
+    /*width: 100%;*/
+    display: flex;
+    justify-content: center;
+
+}
+
 
 
 
 /*768px 이하에서 css 처리*/
 @media screen and (max-width: 768px){
     .navbar{
+
         flex-direction: column;
         align-items: flex-start;
         /*padding: 0.8rem 2.4rem;*/
@@ -197,9 +215,11 @@ a{
 
     .navbar_menu{
         display: none;
+        /*vertical-align: middle;*/
         flex-direction: column;
         align-items: center;
         width: 100%;
+        margin: auto;
         transition: 10s;
 
 
@@ -232,6 +252,19 @@ a{
         display: flex;
 
     }
+
+    main .site_title{
+        background: url("../images/background.jpg");
+        background-size: cover;
+        height: 40vh;/*vh 뷰포트 height의 약자로 화면 크기를 기준으로 한 높이(1vh는 10px)*/
+        /*width: 100%;*/
+        display: flex;
+        justify-content: center;
+
+    }
+
+
+
 
 }
 
