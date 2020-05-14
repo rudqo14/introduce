@@ -199,7 +199,7 @@ h2{
 }
 
 main .site_title{
-    background: url("../images/backgroung_cutting.PNG");
+    background: url("../images/background_cutting.png");
     background-size: cover;
     height: 60vh;/*vh 뷰포트 height의 약자로 화면 크기를 기준으로 한 높이(1vh는 10px)*/
     /*width: 100%;*/
@@ -209,6 +209,7 @@ main .site_title{
 }
 
 main .site_menu{
+
     padding: 4rem 20rem;
     /*background-color: #a3a3a3;*/
 }
@@ -229,13 +230,17 @@ main .site_menu_name{
 }
 
 main .site_menu .container {
+    background-color: #f0f4f5;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     /*height: auto;*/
     justify-content: center;
+    padding: 0 12rem;
 }
 
 main .site_menu .container .item{
+    display: flex;
     flex-direction: column;
     text-align: center;
     padding: 2rem;
@@ -315,6 +320,9 @@ main .site_menu .container .item p{
     main .site_menu{
         padding: 4rem;
 
+    }
+    main .site_menu .container{
+        padding: 0;
     }
 
     main .site_menu .container .item{
