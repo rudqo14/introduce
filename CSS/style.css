@@ -200,6 +200,24 @@ main .site_title{
 
 }
 
+main .site_menu{
+    padding: 4rem;
+    /*background-color: #a3a3a3;*/
+}
+
+h1{
+    font-size: 3rem;
+}
+
+main .site_menu_name{
+    text-align: center;
+}
+
+main .site_menu li {
+    display: flex;
+    height: auto;
+}
+
 
 
 
