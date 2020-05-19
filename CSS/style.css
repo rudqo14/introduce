@@ -122,6 +122,10 @@ h2{
     font-size: 1.5rem;
 }
 
+hr{
+    padding: 0 3rem;
+}
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -257,6 +261,51 @@ main .site_menu .container .item img{
 main .site_menu .container .item p{
     font-size: 1.2rem;
 }
+
+.msg {
+    font-size: 1.5em;
+    margin-top: 40px;
+}
+
+.inputNumber{
+    width: 20vw;
+    height: 3rem;
+    font-size: 1.5rem;
+    margin: 0.5rem 0.5rem;
+    text-align: center;
+    border: 4px solid #345893;
+}
+
+.submitButton{
+
+    width: 20vw; /* 부모 400px 영역 안의 100% 사용 */
+    text-align: center;
+    border: 4px solid #345893;
+    background-color: #3498db;
+    color:white;
+    font-size:1.5rem;
+    margin: 0.5rem 0.5rem;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.submitButton:hover{
+    /* 버튼에 마우스 오버한 경우에 ::after 요소의 컬러를 애니메이션하기 위해 투명도로 변경 */
+    background-color: transparent;
+    color: #0B93BD;
+}
+
+.guesses{
+
+}
+
+.result{
+
+}
+
 
 
 
