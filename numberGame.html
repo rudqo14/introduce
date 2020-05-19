@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="김경배의 자기소개 웹사이트" name="keywords">
+    <meta content="자기소개 웹사이트입니다." name="description">
+    <meta content="김경배" name="author">
+
+    <title>프로젝트</title>
+
+    <link href="CSS/style.css?ver=1" rel="stylesheet">
+
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/a13b34384e.js"></script>
+    <script defer src="JS/projects.js?ver=1"></script>
+</head>
+<body>
+
+
+<nav class="navbar">
+
+    <div class="navbar_logo">
+        <i class="fas fa-user"></i>
+        <a class="main_text">김경배의 자기소개 웹페이지</a>
+    </div>
+
+
+    <ul class="navbar_menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#scroll_target">About</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="">Thank you</a></li>
+    </ul>
+
+    <ul class="navbar_social_icons">
+        <li><a class="fab fa-github" href="https://github.com/rudqo14/introduce"></a></li>
+    </ul>
+
+    <a class="navbar_toggle_btn" href="#">
+        <i class="fas fa-bars"></i>
+    </a>
+
+</nav>
+
+
+<main>
+    <section class="site_title">
+        <div class="site_background">
+            <!--            <h3>김경배의 자기소개 웹사이트입니다.</h3>-->
+
+        </div>
+    </section>
+    <br>
+
+
+
+<div class="site_menu">
+    <div class="introduce">
+        <hr><br><br>
+
+        <h2> <img alt="Speak" src="images/mystery.png"/><br><br>
+            1부터 100까지의 랜덤 숫자 중 하나를 추측해보고 값을 입력하여 맞춰보세요.
+            <br><br><br>
+            <label>
+                <input type="text" placeholder="숫자를 입력해주세요." class="inputNumber" id="user" size="5"><br>
+                <input type="button" class="submitButton" id="submitButton" value="확인" onclick="guess()"><br>
+
+                추측 횟수:
+
+                <input type="text" class="guesses" id="guesses" disabled><br>
+
+                Up or Down :
+
+                <input type="text" class="result" id="result" disabled><br><br><br>
+
+            <div id="answer"></div>
+            <input type="button" id="reset" name="btnDelete" value="다시하기" onclick="window.location.reload()">
+            </label>
+
+
+        </h2>
+
+
+
+        <br><br><hr>
+    </div>
+</div>
+</main>
+
+
+
+<!--<h1>1-100까지 숫자 추측해보기</h1>-->
+
+<!--<h3>Speak the number into your microphone</h3>-->
+
+<!--<div class="msg" id="msg"></div>-->
+
+
+
+</body>
+</html>
