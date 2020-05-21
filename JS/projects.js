@@ -1,6 +1,6 @@
 const randomNumber = getRandomNumber();
 
-// console.log(randomNumber);
+console.log(randomNumber);
 
 function getRandomNumber() {
     return Math.floor(Math.random() * 100) + 1;
