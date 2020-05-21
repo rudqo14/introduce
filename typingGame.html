@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="김경배의 자기소개 웹사이트" name="keywords">
+    <meta content="자기소개 웹사이트입니다." name="description">
+    <meta content="김경배" name="author">
+
+    <title>JS 프로젝트</title>
+
+    <link href="CSS/typingGame.css?ver=1" rel="stylesheet">
+
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/a13b34384e.js"></script>
+    <script defer src="JS/typing.js?ver=1"></script>
+</head>
+<body>
+
+
+<nav class="navbar">
+
+    <div class="navbar_logo">
+        <i class="fas fa-user"></i>
+        <a class="main_text">김경배의 자기소개 웹페이지</a>
+    </div>
+
+
+    <ul class="navbar_menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#target_about">About</a></li>
+        <li><a href="index.html#target_projects">Projects</a></li>
+        <li><a href="">Thank you</a></li>
+    </ul>
+
+    <ul class="navbar_social_icons">
+        <li><a class="fab fa-github" href="https://github.com/rudqo14/introduce"></a></li>
+    </ul>
+
+    <a class="navbar_toggle_btn" href="#">
+        <i class="fas fa-bars"></i>
+    </a>
+
+</nav>
+
+
+<main>
+    <section class="site_title">
+        <div class="site_background">
+
+        </div>
+    </section>
+    <br>
+
+
+    <div class="site_menu">
+        <div class="introduce">
+            <hr><br><br>
+
+            <h2><img alt="" src="images/keyboard.png"/></h2>
+
+            <div class="settings" id="settings">
+                <form id="settings_form">
+                        <label for="difficulty">난이도</label>
+                        <select id="difficulty">
+                            <option value="easy">하</option>
+                            <option value="medium">중</option>
+                            <option value="hard">상</option>
+                        </select>
+                </form>
+                <input type="button" id="start" name="btnStart" value="시작하기">
+            </div>
+
+            <div class="container">
+                <h2>타이핑 연습하기</h2>
+                <small>다음 단어를 따라서 쳐보세요!:<br>(중복되는 단어가 있을 수 있습니다.)</small>
+
+                <h1 id="word"></h1>
+
+                <label><input
+                        autocomplete="off"
+                        id="text"
+                        placeholder="Type the word here..."
+                        type="text"
+                /></label>
+
+                <p class="time_container">Time left: <span id="time">10s</span></p>
+
+                <p class="score_container">Score: <span id="score">0</span></p>
+
+                <div class="end_game_container" id="end_game_container"></div>
+            </div>
+
+
+            <br><br>
+            <hr>
+        </div>
+    </div>
+</main>
+
+
+</body>
+</html>
