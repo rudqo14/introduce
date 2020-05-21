@@ -13,10 +13,11 @@
 
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/a13b34384e.js"></script>
     <script defer src="JS/main.js?ver=1"></script>
+
 </head>
 <body>
 
-<nav class="navbar">
+<nav class="navbar" id="navbar">
 
     <div class="navbar_logo">
         <i class="fas fa-user"></i>
@@ -26,8 +27,8 @@
 
     <ul class="navbar_menu">
         <li><a href="">Home</a></li>
-        <li><a href="#scroll_target">About</a></li>
-        <li><a href="">Projects</a></li>
+        <li><a href="#target_about">About</a></li>
+        <li><a href="#target_projects">Projects</a></li>
         <li><a href="">Thank you</a></li>
     </ul>
 
@@ -57,7 +58,7 @@
                 사용자에게 가치있는 정보를 제공할 수 있는 개발자에 관심을 가지게 되었고,
                 <br><br>
                 사용자와 소통할 수 있는 프론트엔드를 희망하고 있습니다.
-                <br id="scroll_target"><!--about 스크롤 타겟--><br><br>
+                <br id="target_about"><!--about 스크롤 타겟--><br><br>
             </h2>
             <hr>
         </div>
@@ -83,27 +84,15 @@
                 <p>호기심이 많아<br>삽질을 많이 함</p></div>
         </div>
 
-        <br><br><br><hr><br><br><br>
+        <br><br id="target_projects" ><br><hr><br><br><br>
 
 
         <h1 class="site_menu_name">Projects</h1>
         <div class="container">
             <div class="item item1"><a href="numberGame.html"><img src="images/number.png"/></a>
                 <p>숫자 맞추기 게임</p></div>
-            <div class="item item2"><a href="#"><img src=""/></a>
-                <p></p></div>
-            <div class="item item3"><a href="#"><img src=""/></a>
-                <p></p></div>
-            <div class="item item4"><a href="#"><img src=""/></a>
-                <p></p></div>
-            <div class="item item5"><a href="#"><img src=""/></a>
-                <p></p></div>
-            <div class="item item6"><a href="#"><img src=""/></a>
-                <p></p></div>
-            <div class="item item7"><a href="#"><img src=""/></a>
-                <p></p></div>
-            <div class="item item8"><a href="#"><img src=""/></a>
-                <p></p></div>
+            <div class="item item2"><a href="typingGame.html"><img src="images/keyboard.png"/></a>
+                <p>타자 게임</p></div>
         </div>
 
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -114,5 +103,8 @@
 
 
 </main>
+<!--<script>
+    includeHTML();
+</script>-->
 </body>
 </html>
