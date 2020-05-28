@@ -281,7 +281,7 @@ main .site_menu .container .item p{
     }
 
     main .site_title{
-        background: url("../images/background.PNG");
+        background: url("../images/background.png");
         background-size: cover;
         height: 30vh;/*vh 뷰포트 height의 약자로 화면 크기를 기준으로 한 높이(1vh는 10px)*/
         /*width: 100%;*/
