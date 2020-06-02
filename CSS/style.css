@@ -84,11 +84,12 @@
 !*css 공부적용하기*!
 */
 
-@import "reset.css";
-@import "navbar.css";
-@import "main.css";
-@import "maxWidth(768px).css";
-@import "numberGame.css";
+@import "reset.css?ver=1";
+@import "navbar.css?ver=1";
+@import "main.css?ver=1";
+@import "numberGame.css?ver=1";
+@import "typingGame.css";
+@import "maxWidth(768px).css?ver=1";
 /*@import "typingGame.css";*/
 @import url('https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap&subset=korean');
 
