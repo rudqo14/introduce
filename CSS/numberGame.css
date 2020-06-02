@@ -1,4 +1,4 @@
-.inputNumber{
+.input_number{
     width: 20vw;
     height: 3rem;
     font-size: 1.5rem;
@@ -7,7 +7,7 @@
     border: 4px solid #345893;
 }
 
-.submitButton{
+.submit_button{
 
     width: 20vw; /* 부모 400px 영역 안의 100% 사용 */
     text-align: center;
@@ -23,7 +23,7 @@
     text-decoration: none;
 }
 
-.submitButton:hover{
+.submit_button:hover{
     /* 버튼에 마우스 오버한 경우에 ::after 요소의 컬러를 애니메이션하기 위해 투명도로 변경 */
     background-color: transparent;
     color: #0B93BD;
