@@ -55,7 +55,7 @@
 
     }
 
-    main .site_title{
+    .site_title{
         background: url("../images/background.png");
         background-size: cover;
         height: 30vh;/*vh 뷰포트 height의 약자로 화면 크기를 기준으로 한 높이(1vh는 10px)*/
@@ -66,20 +66,24 @@
 
     }
 
-    main .site_menu{
+    .site_menu{
         padding: 4rem;
 
     }
-    main .site_menu .container{
+    .site_menu .container{
         padding: 0;
     }
 
-    main .site_menu .container .item{
+    .site_menu .container .item{
         padding: 0.8rem;
     }
 
-    .inputNumber{
+    .input_number{
         width: 100%;
+    }
+
+    .typing_container{
+        padding: 0;
     }
 
 
