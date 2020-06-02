@@ -29,11 +29,11 @@ function guess() {
         document.getElementById("answer").innerHTML = "정답입니다. 추측한 횟수" + (count++) + "번";
         document.getElementById("guesses").innerHTML = "-";
         document.getElementById("result").innerHTMl = "-";
-        document.getElementById("submitButton").disabled = true;
+        document.getElementById("submit_button").disabled = true;
 
     } else if (count == 10) {/*입력 시도 10회 제한*/
 
-        document.getElementById("submitButton").disabled = true;
+        document.getElementById("submit_button").disabled = true;
 
         document.getElementById("answer").style.color = "red";
 
