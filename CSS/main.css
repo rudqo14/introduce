@@ -1,4 +1,4 @@
-main .site_title{
+.site_title{
     background: url("../images/background_cutting.png");
     width:100%;
     background-size: cover;
@@ -9,7 +9,7 @@ main .site_title{
 
 }
 
-main .site_menu{
+.site_menu{
 
     padding: 4rem 20rem;
     /*background-color: #a3a3a3;*/
@@ -17,20 +17,20 @@ main .site_menu{
 
 
 
-main .site_menu .introduce{
+.site_menu .introduce{
     padding-bottom: 3rem;
 }
-main .site_menu .introduce strong{
+.site_menu .introduce strong{
     background-color: aqua;
 }
 
 
-main .site_menu_name{
+.site_menu_name{
 
     text-align: center;
 }
 
-main .site_menu .container {
+.site_menu .container {
     background-color: #f0f4f5;
     display: flex;
     flex-direction: row;
@@ -40,17 +40,17 @@ main .site_menu .container {
     padding: 0 12rem;
 }
 
-main .site_menu .container .item{
+.site_menu .container .item{
     display: flex;
     flex-direction: column;
     text-align: center;
     padding: 2rem;
 }
-main .site_menu .container .item img{
+.site_menu .container .item img{
     width: 90px;
     height: 90px;
 }
 
-main .site_menu .container .item p{
+.site_menu .container .item p{
     font-size: 1.2rem;
 }
