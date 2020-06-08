@@ -12,7 +12,7 @@ toggle_btn.addEventListener('click', () => {
     /*네비게이션 버튼 클릭할때마다 높이 설정하기*/
     if (vh == 1) {
         const navbar = document.querySelector('.navbar');
-        navbar.style.height = "30vh";
+        navbar.style.height = "50vh";
         vh = 2;
     } else {
         const navbar = document.querySelector('.navbar');
