@@ -1,0 +1,12 @@
+.form, .grettings{
+    display: none;
+}
+
+.showing{
+    display: block;
+}
+
+.toDoInput {
+    /*width: 100%;*/
+    font-size: 1.5rem;
+}
