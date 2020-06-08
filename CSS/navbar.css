@@ -30,10 +30,21 @@
     padding: 0.8rem 1.2rem;
 }
 
-.navbar_menu li:hover{
-    background-position: center;
+/*.navbar_menu li:hover{
     background-color: #f0f4f5;
     border-color: var(--black-color);
+    border-style: solid;
+    border-bottom-width: 0.2rem;
+    border-right-width: 0.2rem;
+    !*border-bottom-width: thick;*!
+    border-radius: 10rem;
+    !*opacity: 1;*!
+}*/
+
+.navbar_menu li:hover{
+    background-color: #f0f4f5;
+    border-color: var(--black-color);
+
     border-style: solid;
     border-bottom-width: 0.2rem;
     border-right-width: 0.2rem;
