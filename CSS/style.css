@@ -88,7 +88,8 @@
 @import "navbar.css?ver=1";
 @import "main.css?ver=1";
 @import "numberGame.css?ver=1";
-@import "typingGame.css";
+@import "typingGame.css?ver=1";
+@import "gretting.css?ver=1";
 @import "maxWidth(768px).css?ver=1";
 /*@import "typingGame.css";*/
 @import url('https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap&subset=korean');
